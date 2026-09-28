@@ -1,0 +1,9 @@
+# PlatformIO 构建产物
+.pio/
+.pioenvs/
+.piolibdeps/
+
+# 编辑器 / 系统
+.vscode/
+*.swp
+.DS_Store
