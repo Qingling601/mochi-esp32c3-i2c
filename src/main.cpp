@@ -7,8 +7,8 @@
 //   SCL -> GPIO6
 //   SDA -> GPIO7
 //
-// 4针 I2C 模块只有 SCL/SDA，无 RES/DC/CS；I2C 地址 0x3C（8位写地址 0x78）。
-// 软件位操作 I2C（与商家 I2C 例程一致），任意 GPIO 均可。
+// 4针 I2C 模块只有 SCL/SDA，无 RES/DC/CS；I2C 地址 0x3C。
+// 使用硬件 I2C（Wire 库），400kHz；SCL/SDA 由 Wire.begin() 配置，勿再 pinMode。
 //
 // 其他外设（与 7 针工程相同）：
 //   触摸模块 I/O -> GPIO1
